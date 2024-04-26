@@ -19,7 +19,7 @@ namespace Tango.AceptarCotizacion
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            MetodoDePago efectivo = new MetodoDePago() { idPago = 1, descripcionPago = "Efectivo"};
+            MetodoDePago alRetirar = new MetodoDePago() { idPago = 1, descripcionPago = "Al Retirar" };
             MetodoDePago contraEntrega = new MetodoDePago() { idPago = 1, descripcionPago = "Contra Entrega" };
             MetodoDePago tarjeta = new MetodoDePago() { idPago = 1, descripcionPago = "Tarjeta" };
             MetodoDePago debito = new MetodoDePago() { idPago = 1, descripcionPago = "Debito" };
@@ -30,7 +30,7 @@ namespace Tango.AceptarCotizacion
                 apellido = "Gomez",
                 mail = "mailejemplo@gmail.com",
                 clasificacion = (decimal) 4.5,
-                metodosPago = new List<MetodoDePago> { efectivo, contraEntrega, tarjeta, debito}
+                metodosPago = new List<MetodoDePago> { alRetirar, contraEntrega, tarjeta, debito}
             };
 
             Pedido ped = new Pedido()

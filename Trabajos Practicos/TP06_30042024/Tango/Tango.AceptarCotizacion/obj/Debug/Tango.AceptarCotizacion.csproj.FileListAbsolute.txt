@@ -8,3 +8,13 @@ C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.Acept
 C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.CoreCompileInputs.cache
 C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.exe
 C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pdb
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.exe.config
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.exe
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.pdb
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.AssemblyReference.cache
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pantallaCotizacion.resources
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.Properties.Resources.resources
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.GenerateResource.cache
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.CoreCompileInputs.cache
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.exe
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pdb
