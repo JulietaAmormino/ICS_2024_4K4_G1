@@ -1,0 +1,10 @@
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.exe.config
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.exe
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.pdb
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.AssemblyReference.cache
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pantallaCotizacion.resources
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.Properties.Resources.resources
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.GenerateResource.cache
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.CoreCompileInputs.cache
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.exe
+C:\Users\Ssalas\source\repos\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pdb
