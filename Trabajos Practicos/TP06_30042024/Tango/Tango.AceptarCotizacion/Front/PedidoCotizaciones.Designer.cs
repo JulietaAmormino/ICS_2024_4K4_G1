@@ -36,14 +36,14 @@
             this.lblTipo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblFechaEntrega = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridCotizaciones = new System.Windows.Forms.DataGridView();
             this.nroCotizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.transportista = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fRetiro = new System.Windows.Forms.DataGridViewLinkColumn();
             this.fEntrega = new System.Windows.Forms.DataGridViewLinkColumn();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCotizaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,19 +118,20 @@
             this.lblFechaEntrega.TabIndex = 7;
             this.lblFechaEntrega.Text = "fech";
             // 
-            // dataGridView1
+            // gridCotizaciones
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridCotizaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridCotizaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nroCotizacion,
             this.transportista,
             this.importe,
             this.fRetiro,
             this.fEntrega});
-            this.dataGridView1.Location = new System.Drawing.Point(55, 145);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(671, 189);
-            this.dataGridView1.TabIndex = 8;
+            this.gridCotizaciones.Location = new System.Drawing.Point(55, 145);
+            this.gridCotizaciones.Name = "gridCotizaciones";
+            this.gridCotizaciones.Size = new System.Drawing.Size(646, 189);
+            this.gridCotizaciones.TabIndex = 8;
+            this.gridCotizaciones.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCotizaciones_CellClick);
             // 
             // nroCotizacion
             // 
@@ -159,12 +160,14 @@
             // 
             // btnConfirmar
             // 
+            this.btnConfirmar.Enabled = false;
             this.btnConfirmar.Location = new System.Drawing.Point(657, 419);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmar.TabIndex = 9;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // PedidoCotizaciones
             // 
@@ -172,7 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridCotizaciones);
             this.Controls.Add(this.lblFechaEntrega);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblTipo);
@@ -183,7 +186,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PedidoCotizaciones";
             this.Text = "Pedido Cotizaciones";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCotizaciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,7 +202,7 @@
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblFechaEntrega;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridCotizaciones;
         private System.Windows.Forms.DataGridViewTextBoxColumn nroCotizacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn transportista;
         private System.Windows.Forms.DataGridViewTextBoxColumn importe;

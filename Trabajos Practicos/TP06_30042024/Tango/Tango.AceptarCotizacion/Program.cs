@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Tango.AceptarCotizacion.Datos;
+using Tango.AceptarCotizacion.Front;
 
 namespace Tango.AceptarCotizacion
 {
@@ -36,23 +37,61 @@ namespace Tango.AceptarCotizacion
             Pedido ped = new Pedido()
             {
                 idPedido = 1,
+                tipoDeCarga = "Paquete",
+                fechaEntrega = new DateTime(2024, 05, 15),
                 estado = 1
             };
+
 
             Cotizacion cot = new Cotizacion()
             {
                 idCotizacion = 14550,
+                importe = 13460,
+                fechaRetiro = new DateTime(2024, 4, 30),
+                fechaEntrega = new DateTime(2024, 5, 2),
+                transportista = trans,
+                pedido = ped
+            };
+            Cotizacion cot1 = new Cotizacion()
+            {
+                idCotizacion = 1500,
+                importe = 11260,
+                fechaRetiro = new DateTime(2024, 4, 30),
+                fechaEntrega = new DateTime(2024, 5, 2),
+                transportista = trans,
+                pedido = ped
+            };
+            Cotizacion cot2 = new Cotizacion()
+            {
+                idCotizacion = 13250,
                 importe = 1560,
                 fechaRetiro = new DateTime(2024, 4, 30),
                 fechaEntrega = new DateTime(2024, 5, 2),
                 transportista = trans,
                 pedido = ped
-
+            };
+            Cotizacion cot3 = new Cotizacion()
+            {
+                idCotizacion = 16210,
+                importe = 15460,
+                fechaRetiro = new DateTime(2024, 4, 30),
+                fechaEntrega = new DateTime(2024, 5, 2),
+                transportista = trans,
+                pedido = ped
+            };
+            Cotizacion cot4 = new Cotizacion()
+            {
+                idCotizacion = 14200,
+                importe = 15230,
+                fechaRetiro = new DateTime(2024, 4, 30),
+                fechaEntrega = new DateTime(2024, 5, 2),
+                transportista = trans,
+                pedido = ped
             };
 
-            Application.Run(new pantallaCotizacion(cot));
+            List<Cotizacion> cotizacions = new List<Cotizacion>() { cot, cot1, cot2, cot3, cot4 };
 
-
+            Application.Run(new PedidoCotizaciones(ped, cotizacions));
 
         }
     }
