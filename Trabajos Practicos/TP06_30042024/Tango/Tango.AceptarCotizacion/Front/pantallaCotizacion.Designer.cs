@@ -37,7 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblImporte = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbFormaPago = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -59,6 +58,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btConfirmar = new System.Windows.Forms.Button();
             this.lbMensaje = new System.Windows.Forms.Label();
+            this.rbContadoRetirar = new System.Windows.Forms.RadioButton();
+            this.rbContraEntrega = new System.Windows.Forms.RadioButton();
+            this.rbTarjeta = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -142,20 +144,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(193, 55);
+            this.label4.Location = new System.Drawing.Point(18, 61);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 18);
             this.label4.TabIndex = 8;
             this.label4.Text = "Metodo de Pago";
-            // 
-            // cbFormaPago
-            // 
-            this.cbFormaPago.FormattingEnabled = true;
-            this.cbFormaPago.Location = new System.Drawing.Point(353, 44);
-            this.cbFormaPago.Name = "cbFormaPago";
-            this.cbFormaPago.Size = new System.Drawing.Size(151, 25);
-            this.cbFormaPago.TabIndex = 9;
-            this.cbFormaPago.SelectedIndexChanged += new System.EventHandler(this.cbFormaPago_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -203,10 +196,12 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.rbTarjeta);
+            this.panel3.Controls.Add(this.rbContraEntrega);
+            this.panel3.Controls.Add(this.rbContadoRetirar);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.lblImporte);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.cbFormaPago);
             this.panel3.Location = new System.Drawing.Point(69, 201);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(877, 97);
@@ -376,6 +371,39 @@
             this.lbMensaje.Size = new System.Drawing.Size(0, 18);
             this.lbMensaje.TabIndex = 16;
             // 
+            // rbContadoRetirar
+            // 
+            this.rbContadoRetirar.AutoSize = true;
+            this.rbContadoRetirar.Location = new System.Drawing.Point(153, 61);
+            this.rbContadoRetirar.Name = "rbContadoRetirar";
+            this.rbContadoRetirar.Size = new System.Drawing.Size(142, 22);
+            this.rbContadoRetirar.TabIndex = 9;
+            this.rbContadoRetirar.TabStop = true;
+            this.rbContadoRetirar.Text = "Contado Al Retirar";
+            this.rbContadoRetirar.UseVisualStyleBackColor = true;
+            // 
+            // rbContraEntrega
+            // 
+            this.rbContraEntrega.AutoSize = true;
+            this.rbContraEntrega.Location = new System.Drawing.Point(325, 61);
+            this.rbContraEntrega.Name = "rbContraEntrega";
+            this.rbContraEntrega.Size = new System.Drawing.Size(118, 22);
+            this.rbContraEntrega.TabIndex = 10;
+            this.rbContraEntrega.TabStop = true;
+            this.rbContraEntrega.Text = "Contra Entrega";
+            this.rbContraEntrega.UseVisualStyleBackColor = true;
+            // 
+            // rbTarjeta
+            // 
+            this.rbTarjeta.AutoSize = true;
+            this.rbTarjeta.Location = new System.Drawing.Point(465, 61);
+            this.rbTarjeta.Name = "rbTarjeta";
+            this.rbTarjeta.Size = new System.Drawing.Size(66, 22);
+            this.rbTarjeta.TabIndex = 11;
+            this.rbTarjeta.TabStop = true;
+            this.rbTarjeta.Text = "Tarjeta";
+            this.rbTarjeta.UseVisualStyleBackColor = true;
+            // 
             // pantallaCotizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -415,7 +443,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblImporte;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbFormaPago;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
@@ -437,6 +464,9 @@
         private System.Windows.Forms.Button btConfirmar;
         private System.Windows.Forms.Label lbMensaje;
         private System.Windows.Forms.DateTimePicker tbFechaVencimiento;
+        private System.Windows.Forms.RadioButton rbTarjeta;
+        private System.Windows.Forms.RadioButton rbContraEntrega;
+        private System.Windows.Forms.RadioButton rbContadoRetirar;
     }
 }
 
