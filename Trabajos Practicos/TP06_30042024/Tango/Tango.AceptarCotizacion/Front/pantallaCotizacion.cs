@@ -14,6 +14,7 @@ namespace Tango.AceptarCotizacion
 {
     public partial class pantallaCotizacion : Form
     {
+        private Cotizacion cotizacion;
         public pantallaCotizacion(Cotizacion cot)
         {
             InitializeComponent();
@@ -22,6 +23,8 @@ namespace Tango.AceptarCotizacion
 
         public void CargarPantalla(Cotizacion cot)
         {
+            cotizacion = cot;
+
             lblTransNombre.Text = cot.transportista.nombre +  " " + cot.transportista.apellido;
             lblTransClasificacion.Text = cot.transportista.clasificacion.ToString();
             lblFechaRetiro.Text = cot.fechaRetiro.ToString("dd/MM/yyyy");
@@ -127,8 +130,26 @@ namespace Tango.AceptarCotizacion
                     else if (cbTipo.Text == "Pasaporte" && tbDocumento.Text.Length != 9)
                         lbMensaje.Text = "Longitud del numero de documento incorrecto, los tipo Pasaporte tienen 8 digitos";
                 }
-
-
+                else if ((int.Parse(tbNumeroTarjeta.Text) % 2) == 0)
+                {
+                    lbMensaje.Text = "Fondos insuficientes";
+                }
+                else if ((int.Parse(tbNumeroTarjeta.Text) % 3) == 0)
+                {
+                    lbMensaje.Text = "La tarjeta ingresada no fue encontrada";
+                }
+                else
+                {
+                    cotizacion.pedido.estado = 1;
+                    btConfirmar.Enabled = false;
+                    lbMensaje.Text = "Pago procesado, Pedido confirmado.";
+                }
+            }
+            else
+            {
+                cotizacion.pedido.estado = 1;
+                btConfirmar.Enabled = false;
+                lbMensaje.Text = "Pedido confirmado";
             }
         }
     }
