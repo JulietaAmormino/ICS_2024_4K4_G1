@@ -31,11 +31,7 @@ namespace Tango.AceptarCotizacion
             lblFechaEntrega.Text = cot.fechaEntrega.ToString("dd/MM/yyyy");
             lblImporte.Text = cot.importe.ToString();
 
-            foreach (var c in cot.transportista.metodosPago)
-            {
-                cbFormaPago.Items.Add(c.descripcionPago);
-            }
-
+            
             cbTipo.Items.Add("DNI");
             cbTipo.Items.Add("CUIL");
             cbTipo.Items.Add("CUIT");
@@ -49,7 +45,7 @@ namespace Tango.AceptarCotizacion
 
         private void cbFormaPago_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbFormaPago.Text == "Tarjeta" || cbFormaPago.Text == "Debito")
+            if (rbTarjeta.Checked)
             {
                 tbNumeroTarjeta.Enabled = true;
                 tbPin.Enabled = true;
@@ -58,15 +54,7 @@ namespace Tango.AceptarCotizacion
                 tbDocumento.Enabled = true;
                 cbTipo.Enabled = true;
             }
-            else if (cbFormaPago.Text == "")
-            {
-                tbNumeroTarjeta.Enabled = false;
-                tbPin.Enabled = false;
-                tbNombre.Enabled = false;
-                tbFechaVencimiento.Enabled = false;
-                tbDocumento.Enabled = false;
-                cbTipo.Enabled = false;
-            }
+            
             else
             {
                 tbNumeroTarjeta.Enabled = false;
@@ -82,11 +70,7 @@ namespace Tango.AceptarCotizacion
         {
             lbMensaje.Text = "";
 
-            if (String.IsNullOrEmpty(cbFormaPago.Text))
-            {
-                lbMensaje.Text = "Ingrese una forma de Pago";
-            }
-            else if (cbFormaPago.Text == "Tarjeta" || cbFormaPago.Text == "Debito")
+            if (rbTarjeta.Checked)
             {
                 if(String.IsNullOrEmpty(tbNumeroTarjeta.Text)
                     || String.IsNullOrEmpty(tbPin.Text)
