@@ -44,6 +44,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tbFechaVencimiento = new System.Windows.Forms.DateTimePicker();
             this.cbTipo = new System.Windows.Forms.ComboBox();
             this.tbDocumento = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btConfirmar = new System.Windows.Forms.Button();
             this.lbMensaje = new System.Windows.Forms.Label();
-            this.tbFechaVencimiento = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -71,9 +71,9 @@
             this.lblTransNombre.AutoSize = true;
             this.lblTransNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTransNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
-            this.lblTransNombre.Location = new System.Drawing.Point(31, 95);
+            this.lblTransNombre.Location = new System.Drawing.Point(31, 57);
             this.lblTransNombre.Name = "lblTransNombre";
-            this.lblTransNombre.Size = new System.Drawing.Size(27, 25);
+            this.lblTransNombre.Size = new System.Drawing.Size(22, 21);
             this.lblTransNombre.TabIndex = 1;
             this.lblTransNombre.Text = "N";
             // 
@@ -82,9 +82,9 @@
             this.lblTransClasificacion.AutoSize = true;
             this.lblTransClasificacion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTransClasificacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
-            this.lblTransClasificacion.Location = new System.Drawing.Point(31, 57);
+            this.lblTransClasificacion.Location = new System.Drawing.Point(33, 93);
             this.lblTransClasificacion.Name = "lblTransClasificacion";
-            this.lblTransClasificacion.Size = new System.Drawing.Size(24, 25);
+            this.lblTransClasificacion.Size = new System.Drawing.Size(20, 21);
             this.lblTransClasificacion.TabIndex = 2;
             this.lblTransClasificacion.Text = "C";
             // 
@@ -95,7 +95,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
             this.label2.Location = new System.Drawing.Point(3, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(226, 26);
+            this.label2.Size = new System.Drawing.Size(180, 21);
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha Retiro y Entrega";
             // 
@@ -106,7 +106,7 @@
             this.lblFechaRetiro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
             this.lblFechaRetiro.Location = new System.Drawing.Point(23, 57);
             this.lblFechaRetiro.Name = "lblFechaRetiro";
-            this.lblFechaRetiro.Size = new System.Drawing.Size(34, 25);
+            this.lblFechaRetiro.Size = new System.Drawing.Size(28, 21);
             this.lblFechaRetiro.TabIndex = 4;
             this.lblFechaRetiro.Text = "FR";
             // 
@@ -117,7 +117,7 @@
             this.lblFechaEntrega.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
             this.lblFechaEntrega.Location = new System.Drawing.Point(23, 95);
             this.lblFechaEntrega.Name = "lblFechaEntrega";
-            this.lblFechaEntrega.Size = new System.Drawing.Size(32, 25);
+            this.lblFechaEntrega.Size = new System.Drawing.Size(26, 21);
             this.lblFechaEntrega.TabIndex = 5;
             this.lblFechaEntrega.Text = "FE";
             // 
@@ -126,7 +126,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(17, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 22);
+            this.label3.Size = new System.Drawing.Size(51, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "importe";
             // 
@@ -135,7 +135,7 @@
             this.lblImporte.AutoSize = true;
             this.lblImporte.Location = new System.Drawing.Point(103, 13);
             this.lblImporte.Name = "lblImporte";
-            this.lblImporte.Size = new System.Drawing.Size(15, 22);
+            this.lblImporte.Size = new System.Drawing.Size(12, 18);
             this.lblImporte.TabIndex = 7;
             this.lblImporte.Text = "I";
             // 
@@ -144,7 +144,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(193, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 22);
+            this.label4.Size = new System.Drawing.Size(111, 18);
             this.label4.TabIndex = 8;
             this.label4.Text = "Metodo de Pago";
             // 
@@ -153,7 +153,7 @@
             this.cbFormaPago.FormattingEnabled = true;
             this.cbFormaPago.Location = new System.Drawing.Point(353, 44);
             this.cbFormaPago.Name = "cbFormaPago";
-            this.cbFormaPago.Size = new System.Drawing.Size(151, 30);
+            this.cbFormaPago.Size = new System.Drawing.Size(151, 25);
             this.cbFormaPago.TabIndex = 9;
             this.cbFormaPago.SelectedIndexChanged += new System.EventHandler(this.cbFormaPago_SelectedIndexChanged);
             // 
@@ -186,7 +186,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
             this.label5.Location = new System.Drawing.Point(17, 14);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 26);
+            this.label5.Size = new System.Drawing.Size(137, 21);
             this.label5.TabIndex = 0;
             this.label5.Text = "TRANSPORTISTA";
             // 
@@ -233,13 +233,25 @@
             this.panel4.Size = new System.Drawing.Size(879, 289);
             this.panel4.TabIndex = 14;
             // 
+            // tbFechaVencimiento
+            // 
+            this.tbFechaVencimiento.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.tbFechaVencimiento.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.tbFechaVencimiento.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.tbFechaVencimiento.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.tbFechaVencimiento.Location = new System.Drawing.Point(432, 111);
+            this.tbFechaVencimiento.Name = "tbFechaVencimiento";
+            this.tbFechaVencimiento.Size = new System.Drawing.Size(372, 25);
+            this.tbFechaVencimiento.TabIndex = 21;
+            this.tbFechaVencimiento.Value = new System.DateTime(2024, 4, 27, 0, 0, 0, 0);
+            // 
             // cbTipo
             // 
             this.cbTipo.Enabled = false;
             this.cbTipo.FormattingEnabled = true;
             this.cbTipo.Location = new System.Drawing.Point(401, 211);
             this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(131, 30);
+            this.cbTipo.Size = new System.Drawing.Size(131, 25);
             this.cbTipo.TabIndex = 10;
             // 
             // tbDocumento
@@ -248,7 +260,7 @@
             this.tbDocumento.Location = new System.Drawing.Point(129, 211);
             this.tbDocumento.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.tbDocumento.Name = "tbDocumento";
-            this.tbDocumento.Size = new System.Drawing.Size(205, 30);
+            this.tbDocumento.Size = new System.Drawing.Size(205, 25);
             this.tbDocumento.TabIndex = 20;
             // 
             // label11
@@ -256,7 +268,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(17, 217);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(94, 22);
+            this.label11.Size = new System.Drawing.Size(75, 18);
             this.label11.TabIndex = 19;
             this.label11.Text = "Documento";
             // 
@@ -266,7 +278,7 @@
             this.tbNombre.Location = new System.Drawing.Point(129, 163);
             this.tbNombre.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(521, 30);
+            this.tbNombre.Size = new System.Drawing.Size(521, 25);
             this.tbNombre.TabIndex = 18;
             // 
             // label10
@@ -274,7 +286,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(47, 167);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 22);
+            this.label10.Size = new System.Drawing.Size(54, 18);
             this.label10.TabIndex = 17;
             this.label10.Text = "Nombre";
             // 
@@ -283,7 +295,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(349, 217);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 22);
+            this.label9.Size = new System.Drawing.Size(33, 18);
             this.label9.TabIndex = 17;
             this.label9.Text = "Tipo";
             // 
@@ -292,7 +304,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(261, 117);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(156, 22);
+            this.label8.Size = new System.Drawing.Size(124, 18);
             this.label8.TabIndex = 16;
             this.label8.Text = "Fecha Vencimiento";
             // 
@@ -303,7 +315,7 @@
             this.tbPin.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.tbPin.MaxLength = 3;
             this.tbPin.Name = "tbPin";
-            this.tbPin.Size = new System.Drawing.Size(101, 30);
+            this.tbPin.Size = new System.Drawing.Size(101, 25);
             this.tbPin.TabIndex = 14;
             // 
             // label7
@@ -311,7 +323,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(83, 117);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 22);
+            this.label7.Size = new System.Drawing.Size(27, 18);
             this.label7.TabIndex = 13;
             this.label7.Text = "Pin";
             // 
@@ -322,7 +334,7 @@
             this.tbNumeroTarjeta.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.tbNumeroTarjeta.MaxLength = 18;
             this.tbNumeroTarjeta.Name = "tbNumeroTarjeta";
-            this.tbNumeroTarjeta.Size = new System.Drawing.Size(521, 30);
+            this.tbNumeroTarjeta.Size = new System.Drawing.Size(521, 25);
             this.tbNumeroTarjeta.TabIndex = 12;
             // 
             // label6
@@ -330,7 +342,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(47, 59);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 22);
+            this.label6.Size = new System.Drawing.Size(54, 18);
             this.label6.TabIndex = 11;
             this.label6.Text = "Numero";
             // 
@@ -339,7 +351,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(397, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 22);
+            this.label1.Size = new System.Drawing.Size(55, 18);
             this.label1.TabIndex = 10;
             this.label1.Text = "Tarjetas";
             // 
@@ -361,24 +373,12 @@
             this.lbMensaje.AutoSize = true;
             this.lbMensaje.Location = new System.Drawing.Point(83, 674);
             this.lbMensaje.Name = "lbMensaje";
-            this.lbMensaje.Size = new System.Drawing.Size(0, 22);
+            this.lbMensaje.Size = new System.Drawing.Size(0, 18);
             this.lbMensaje.TabIndex = 16;
-            // 
-            // tbFechaVencimiento
-            // 
-            this.tbFechaVencimiento.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.tbFechaVencimiento.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
-            this.tbFechaVencimiento.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
-            this.tbFechaVencimiento.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
-            this.tbFechaVencimiento.Location = new System.Drawing.Point(432, 111);
-            this.tbFechaVencimiento.Name = "tbFechaVencimiento";
-            this.tbFechaVencimiento.Size = new System.Drawing.Size(372, 30);
-            this.tbFechaVencimiento.TabIndex = 21;
-            this.tbFechaVencimiento.Value = new System.DateTime(2024, 4, 27, 0, 0, 0, 0);
             // 
             // pantallaCotizacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.ClientSize = new System.Drawing.Size(1040, 735);

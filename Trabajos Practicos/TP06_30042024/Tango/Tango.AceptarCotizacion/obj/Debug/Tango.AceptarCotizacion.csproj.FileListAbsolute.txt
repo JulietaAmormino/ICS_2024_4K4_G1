@@ -29,3 +29,4 @@ C:\Users\amarcomini\Documents\UTN\GitHub\ICS_2024_4K4_G1\Trabajos Practicos\TP06
 C:\Users\amarcomini\Documents\UTN\GitHub\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.CoreCompileInputs.cache
 C:\Users\amarcomini\Documents\UTN\GitHub\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.exe
 C:\Users\amarcomini\Documents\UTN\GitHub\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pdb
+D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.Front.PedidoCotizaciones.resources
