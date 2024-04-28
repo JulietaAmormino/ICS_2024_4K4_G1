@@ -4,10 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net;
-using System.Net.Mail;
-using System.Net.Security;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,29 +15,29 @@ namespace Tango.AceptarCotizacion
     public partial class pantallaCotizacion : Form
     {
         private Cotizacion cotizacion;
-        private Message mess = new Message();
-
-        private string myEmail = "santiago0photography@gmail.com";
-        private string MyPassword = "miyx wklc pcgu ltqd";
-        private string MyAlias = "Tango";
-        private MailMessage mCorreo;
-
         public pantallaCotizacion(Cotizacion cot)
         {
             InitializeComponent();
             CargarPantalla(cot);
+            tb1.Format = DateTimePickerFormat.Custom;
+            tb1.CustomFormat = "MM/yyyy";
+            tb1.ShowUpDown = false;
         }
 
         public void CargarPantalla(Cotizacion cot)
         {
             cotizacion = cot;
 
-            lblTransNombre.Text = cot.transportista.nombre + " " + cot.transportista.apellido;
+            lblTransNombre.Text = cot.transportista.nombre +  " " + cot.transportista.apellido;
             lblTransClasificacion.Text = cot.transportista.clasificacion.ToString();
             lblFechaRetiro.Text = cot.fechaRetiro.ToString("dd/MM/yyyy");
             lblFechaEntrega.Text = cot.fechaEntrega.ToString("dd/MM/yyyy");
             lblImporte.Text = cot.importe.ToString();
 
+            /*foreach (var c in cot.transportista.metodosPago)
+            {
+                cbFormaPago.Items.Add(c.descripcionPago);
+            }*/
 
             cbTipo.Items.Add("DNI");
             cbTipo.Items.Add("CUIL");
@@ -54,9 +50,9 @@ namespace Tango.AceptarCotizacion
 
         }
 
-        private void cbFormaPago_SelectedIndexChanged(object sender, EventArgs e)
+        /*private void cbFormaPago_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (rbTarjeta.Checked)
+            if (cbFormaPago.Text == "Tarjeta" || cbFormaPago.Text == "Debito")
             {
                 tbNumeroTarjeta.Enabled = true;
                 tbPin.Enabled = true;
@@ -65,7 +61,15 @@ namespace Tango.AceptarCotizacion
                 tbDocumento.Enabled = true;
                 cbTipo.Enabled = true;
             }
-
+            else if (cbFormaPago.Text == "")
+            {
+                tbNumeroTarjeta.Enabled = false;
+                tbPin.Enabled = false;
+                tbNombre.Enabled = false;
+                tbFechaVencimiento.Enabled = false;
+                tbDocumento.Enabled = false;
+                cbTipo.Enabled = false;
+            }
             else
             {
                 tbNumeroTarjeta.Enabled = false;
@@ -75,15 +79,19 @@ namespace Tango.AceptarCotizacion
                 tbDocumento.Enabled = false;
                 cbTipo.Enabled = false;
             }
-        }
+        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
             lbMensaje.Text = "";
 
-            if (rbTarjeta.Checked)
+            /*if (String.IsNullOrEmpty(cbFormaPago.Text))
             {
-                if (String.IsNullOrEmpty(tbNumeroTarjeta.Text)
+                lbMensaje.Text = "Ingrese una forma de Pago";
+            }
+            else if (cbFormaPago.Text == "Tarjeta" || cbFormaPago.Text == "Debito")
+            {
+                if(String.IsNullOrEmpty(tbNumeroTarjeta.Text)
                     || String.IsNullOrEmpty(tbPin.Text)
                     || String.IsNullOrEmpty(tbFechaVencimiento.Text)
                     || String.IsNullOrEmpty(tbNombre.Text)
@@ -118,7 +126,7 @@ namespace Tango.AceptarCotizacion
                 }
                 else if (!String.IsNullOrEmpty(cbTipo.Text))
                 {
-                    if (cbTipo.Text == "DNI" && tbDocumento.Text.Length != 8)
+                    if(cbTipo.Text == "DNI" && tbDocumento.Text.Length != 8)
                         lbMensaje.Text = "Longitud del numero de documento incorrecto, los tipo DNI tienen 8 digitos";
                     else if ((cbTipo.Text == "CUIL" || cbTipo.Text == "CUIT") && tbDocumento.Text.Length != 10)
                         lbMensaje.Text = "Longitud del numero de documento incorrecto, los tipo CUIL/CUIT tienen 8 digitos";
@@ -135,12 +143,6 @@ namespace Tango.AceptarCotizacion
                 }
                 else
                 {
-                    var txtSubject = "Cotizacion " + cotizacion.idCotizacion.ToString() + " Confrimada.";
-
-                    var txtMessage = "Tu corizacion " + cotizacion.idCotizacion.ToString() + " del pedido " + cotizacion.pedido.idPedido.ToString()
-                                    + " a ser retirado el dia " + cotizacion.fechaRetiro + " y entregado el " + cotizacion.fechaEntrega + ". \n"
-                                    + "El pago ya fue efectuado mediante Tarjeta.";
-
                     cotizacion.pedido.estado = 1;
                     btConfirmar.Enabled = false;
                     lbMensaje.Text = "Pago procesado, Pedido confirmado.";
@@ -148,56 +150,10 @@ namespace Tango.AceptarCotizacion
             }
             else
             {
-                var txtSubject = "Cotizacion " + cotizacion.idCotizacion.ToString() + " Confrimada.";
-
-                var txtMessage = "Tu corizacion " + cotizacion.idCotizacion.ToString() + " del pedido " + cotizacion.pedido.idPedido.ToString()
-                + " a ser retirado el dia " + cotizacion.fechaRetiro.ToString("dd/MM/yyyy") + " y entregado el " + cotizacion.fechaEntrega.ToString("dd/MM/yyyy") + ". \n";
-
-                if (rbContadoRetirar.Checked)
-                    txtMessage = txtMessage + "El pago sera efectuado al retirar el pedido.";
-                else
-                    txtMessage = txtMessage + "El pago sera efectuado contra entrega.";
-
-                EnviarMail(txtSubject, txtMessage);
-
                 cotizacion.pedido.estado = 1;
                 btConfirmar.Enabled = false;
-                MessageBox.Show("Pedido confirmado");
-                this.Close();
-            }
-        }
-
-        private void EnviarMail(string txtSubject, string txtMessage)
-        {
-            mCorreo = new MailMessage();
-            mCorreo.From = new MailAddress(myEmail, MyAlias, System.Text.Encoding.UTF8);
-            mCorreo.To.Add(cotizacion.transportista.mail.Trim());
-            mCorreo.Subject = txtSubject.Trim();
-            mCorreo.Body = txtMessage.Trim();
-            mCorreo.IsBodyHtml = true;
-            mCorreo.Priority = MailPriority.High;
-
-            Enviar();
-        }
-
-        private void Enviar()
-        {
-            try
-            {
-                SmtpClient smtp = new SmtpClient();
-                smtp.UseDefaultCredentials = false;
-                smtp.Port = 25;
-                smtp.Host = "smtp.gmail.com";
-                smtp.Credentials = new System.Net.NetworkCredential(myEmail, MyPassword);
-                ServicePointManager.ServerCertificateValidationCallback = delegate (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors) { return true; };
-                smtp.EnableSsl = true;
-                smtp.Send(mCorreo);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-
+                lbMensaje.Text = "Pedido confirmado";
+            }*/
         }
     }
 }
