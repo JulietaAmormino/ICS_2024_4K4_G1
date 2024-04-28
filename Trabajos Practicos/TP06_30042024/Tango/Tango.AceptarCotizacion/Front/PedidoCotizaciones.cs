@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,7 @@ namespace Tango.AceptarCotizacion.Front
         List<Cotizacion> cotizaciones;
         Cotizacion cot;
         Pedido pedido;
+
         public PedidoCotizaciones(Pedido ped, List<Cotizacion> cots )
         {
             InitializeComponent();
@@ -29,7 +31,7 @@ namespace Tango.AceptarCotizacion.Front
             lblNroPedido.Text = ped.idPedido.ToString();
             lblFechaEntrega.Text = ped.fechaEntrega.ToString();
             lblTipo.Text = ped.tipoDeCarga;
-            lblEstado.Text = ped.estado == 1 ? "Publicado" : "Confirmado";
+            lblEstado.Text = ped.estado == 0 ? "Publicado" : "Confirmado";
 
             for (int i = 0; i < cots.Count; i++)
             {
@@ -42,9 +44,21 @@ namespace Tango.AceptarCotizacion.Front
             }
         }
 
+        private void ActualizarPantalla(Cotizacion cot)
+        {
+            lblNroPedido.Text = cot.pedido.idPedido.ToString();
+            lblFechaEntrega.Text = cot.pedido.fechaEntrega.ToString();
+            lblTipo.Text = cot.pedido.tipoDeCarga;
+            lblEstado.Text = cot.pedido.estado == 1 ? "Confirmado" : "Publicado";
+            if (cot.pedido.estado == 1)
+                btnConfirmar.Enabled = false;
+        }
+
         private void gridCotizaciones_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnConfirmar.Enabled = true;
+            if (pedido.estado != 1)
+                btnConfirmar.Enabled = true;
+
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
@@ -55,13 +69,14 @@ namespace Tango.AceptarCotizacion.Front
             {
                 if (item.idCotizacion.ToString() == idCot)
                     cot = item;
-
             }
 
             this.Hide();
-            pantallaCotizacion prop = new pantallaCotizacion(cot, pedido);
+            pantallaCotizacion prop = new pantallaCotizacion(cot);
             prop.ShowDialog();
             this.Show();
+
+            ActualizarPantalla(cot);
         }
     }
 }

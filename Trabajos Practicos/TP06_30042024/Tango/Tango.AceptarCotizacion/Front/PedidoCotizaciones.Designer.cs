@@ -37,12 +37,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblFechaEntrega = new System.Windows.Forms.Label();
             this.gridCotizaciones = new System.Windows.Forms.DataGridView();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             this.nroCotizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.transportista = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fRetiro = new System.Windows.Forms.DataGridViewLinkColumn();
             this.fEntrega = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.btnConfirmar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridCotizaciones)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,6 +120,8 @@
             // 
             // gridCotizaciones
             // 
+            this.gridCotizaciones.AllowUserToAddRows = false;
+            this.gridCotizaciones.AllowUserToDeleteRows = false;
             this.gridCotizaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCotizaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nroCotizacion,
@@ -128,35 +130,12 @@
             this.fRetiro,
             this.fEntrega});
             this.gridCotizaciones.Location = new System.Drawing.Point(55, 145);
+            this.gridCotizaciones.MultiSelect = false;
             this.gridCotizaciones.Name = "gridCotizaciones";
+            this.gridCotizaciones.ReadOnly = true;
             this.gridCotizaciones.Size = new System.Drawing.Size(646, 189);
             this.gridCotizaciones.TabIndex = 8;
             this.gridCotizaciones.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCotizaciones_CellClick);
-            // 
-            // nroCotizacion
-            // 
-            this.nroCotizacion.HeaderText = "Nro Cotizacion";
-            this.nroCotizacion.Name = "nroCotizacion";
-            // 
-            // transportista
-            // 
-            this.transportista.HeaderText = "Nombre Transportista";
-            this.transportista.Name = "transportista";
-            // 
-            // importe
-            // 
-            this.importe.HeaderText = "Importe";
-            this.importe.Name = "importe";
-            // 
-            // fRetiro
-            // 
-            this.fRetiro.HeaderText = "Fecha Retiro";
-            this.fRetiro.Name = "fRetiro";
-            // 
-            // fEntrega
-            // 
-            this.fEntrega.HeaderText = "Fecha Entrega";
-            this.fEntrega.Name = "fEntrega";
             // 
             // btnConfirmar
             // 
@@ -168,6 +147,39 @@
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            // 
+            // nroCotizacion
+            // 
+            this.nroCotizacion.HeaderText = "Nro Cotizacion";
+            this.nroCotizacion.Name = "nroCotizacion";
+            this.nroCotizacion.ReadOnly = true;
+            this.nroCotizacion.Width = 50;
+            // 
+            // transportista
+            // 
+            this.transportista.HeaderText = "Nombre Transportista";
+            this.transportista.Name = "transportista";
+            this.transportista.ReadOnly = true;
+            this.transportista.Width = 200;
+            // 
+            // importe
+            // 
+            this.importe.HeaderText = "Importe";
+            this.importe.Name = "importe";
+            this.importe.ReadOnly = true;
+            this.importe.Width = 75;
+            // 
+            // fRetiro
+            // 
+            this.fRetiro.HeaderText = "Fecha Retiro";
+            this.fRetiro.Name = "fRetiro";
+            this.fRetiro.ReadOnly = true;
+            // 
+            // fEntrega
+            // 
+            this.fEntrega.HeaderText = "Fecha Entrega";
+            this.fEntrega.Name = "fEntrega";
+            this.fEntrega.ReadOnly = true;
             // 
             // PedidoCotizaciones
             // 
@@ -203,11 +215,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblFechaEntrega;
         private System.Windows.Forms.DataGridView gridCotizaciones;
+        private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.DataGridViewTextBoxColumn nroCotizacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn transportista;
         private System.Windows.Forms.DataGridViewTextBoxColumn importe;
         private System.Windows.Forms.DataGridViewLinkColumn fRetiro;
         private System.Windows.Forms.DataGridViewLinkColumn fEntrega;
-        private System.Windows.Forms.Button btnConfirmar;
     }
 }
