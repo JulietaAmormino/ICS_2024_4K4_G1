@@ -19,9 +19,9 @@ namespace Tango.AceptarCotizacion
         {
             InitializeComponent();
             CargarPantalla(cot);
-            tbFechaVencimiento.Format = DateTimePickerFormat.Custom;
-            tbFechaVencimiento.CustomFormat = "MM/yyyy";
-            tbFechaVencimiento.ShowUpDown = false;
+            tb1.Format = DateTimePickerFormat.Custom;
+            tb1.CustomFormat = "MM/yyyy";
+            tb1.ShowUpDown = false;
         }
 
         public void CargarPantalla(Cotizacion cot)
