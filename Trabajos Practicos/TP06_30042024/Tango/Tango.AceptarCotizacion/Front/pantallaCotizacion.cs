@@ -19,6 +19,9 @@ namespace Tango.AceptarCotizacion
         {
             InitializeComponent();
             CargarPantalla(cot);
+            tbFechaVencimiento.Format = DateTimePickerFormat.Custom;
+            tbFechaVencimiento.CustomFormat = "MM/yyyy";
+            tbFechaVencimiento.ShowUpDown = false;
         }
 
         public void CargarPantalla(Cotizacion cot)
@@ -31,10 +34,10 @@ namespace Tango.AceptarCotizacion
             lblFechaEntrega.Text = cot.fechaEntrega.ToString("dd/MM/yyyy");
             lblImporte.Text = cot.importe.ToString();
 
-            foreach (var c in cot.transportista.metodosPago)
+            /*foreach (var c in cot.transportista.metodosPago)
             {
                 cbFormaPago.Items.Add(c.descripcionPago);
-            }
+            }*/
 
             cbTipo.Items.Add("DNI");
             cbTipo.Items.Add("CUIL");
@@ -47,7 +50,7 @@ namespace Tango.AceptarCotizacion
 
         }
 
-        private void cbFormaPago_SelectedIndexChanged(object sender, EventArgs e)
+        /*private void cbFormaPago_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbFormaPago.Text == "Tarjeta" || cbFormaPago.Text == "Debito")
             {
@@ -76,13 +79,13 @@ namespace Tango.AceptarCotizacion
                 tbDocumento.Enabled = false;
                 cbTipo.Enabled = false;
             }
-        }
+        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
             lbMensaje.Text = "";
 
-            if (String.IsNullOrEmpty(cbFormaPago.Text))
+            /*if (String.IsNullOrEmpty(cbFormaPago.Text))
             {
                 lbMensaje.Text = "Ingrese una forma de Pago";
             }
@@ -150,7 +153,7 @@ namespace Tango.AceptarCotizacion
                 cotizacion.pedido.estado = 1;
                 btConfirmar.Enabled = false;
                 lbMensaje.Text = "Pedido confirmado";
-            }
+            }*/
         }
     }
 }
