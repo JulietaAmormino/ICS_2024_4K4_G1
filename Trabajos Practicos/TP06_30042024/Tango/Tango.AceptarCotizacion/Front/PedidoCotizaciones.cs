@@ -29,7 +29,7 @@ namespace Tango.AceptarCotizacion.Front
         private void CargarPantalla (Pedido ped, List<Cotizacion> cots)
         {
             lblNroPedido.Text = ped.idPedido.ToString();
-            lblFechaEntrega.Text = ped.fechaEntrega.ToString();
+            lblFechaEntrega.Text = ped.fechaEntrega.ToString("dd/MM/yyyy");
             lblTipo.Text = ped.tipoDeCarga;
             lblEstado.Text = ped.estado == 0 ? "Publicado" : "Confirmado";
 
@@ -40,7 +40,6 @@ namespace Tango.AceptarCotizacion.Front
                 gridCotizaciones.Rows[i].Cells[1].Value = cots[i].transportista.nombre + " " + cots[i].transportista.apellido;
                 gridCotizaciones.Rows[i].Cells[2].Value = cots[i].importe;
                 gridCotizaciones.Rows[i].Cells[3].Value = cots[i].fechaRetiro.ToString("dd/MM/yyyy");
-                gridCotizaciones.Rows[i].Cells[4].Value = cots[i].fechaEntrega.ToString("dd/MM/yyyy");
             }
         }
 
