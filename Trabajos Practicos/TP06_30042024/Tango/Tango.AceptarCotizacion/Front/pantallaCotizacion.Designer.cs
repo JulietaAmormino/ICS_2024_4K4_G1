@@ -36,12 +36,13 @@
             this.lblFechaEntrega = new System.Windows.Forms.Label();
             this.lblImporte = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblMarcaTraj = new System.Windows.Forms.Label();
             this.tbDocumento = new System.Windows.Forms.MaskedTextBox();
             this.tbNumeroTarjeta = new System.Windows.Forms.MaskedTextBox();
             this.tbPin = new System.Windows.Forms.MaskedTextBox();
@@ -67,19 +68,19 @@
             this.rbContadoRetirar = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblMarcaTraj = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -90,6 +91,7 @@
             this.groupBox1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTransNombre
@@ -106,13 +108,13 @@
             // lblTransClasificacion
             // 
             this.lblTransClasificacion.AutoSize = true;
-            this.lblTransClasificacion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTransClasificacion.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold);
             this.lblTransClasificacion.ForeColor = System.Drawing.Color.White;
-            this.lblTransClasificacion.Location = new System.Drawing.Point(17, 93);
+            this.lblTransClasificacion.Location = new System.Drawing.Point(58, 88);
             this.lblTransClasificacion.Name = "lblTransClasificacion";
-            this.lblTransClasificacion.Size = new System.Drawing.Size(111, 25);
+            this.lblTransClasificacion.Size = new System.Drawing.Size(50, 33);
             this.lblTransClasificacion.TabIndex = 2;
-            this.lblTransClasificacion.Text = "Calificación";
+            this.lblTransClasificacion.Text = "0,0";
             // 
             // label2
             // 
@@ -161,6 +163,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.lblTransNombre);
             this.panel1.Controls.Add(this.lblTransClasificacion);
@@ -168,16 +171,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(371, 135);
             this.panel1.TabIndex = 11;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -189,6 +182,16 @@
             this.label5.Size = new System.Drawing.Size(291, 29);
             this.label5.TabIndex = 0;
             this.label5.Text = "Información del transportista";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -226,10 +229,10 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.lblMarcaTraj);
             this.panel4.Controls.Add(this.tbDocumento);
+            this.panel4.Controls.Add(this.tb1);
             this.panel4.Controls.Add(this.tbNumeroTarjeta);
             this.panel4.Controls.Add(this.tbPin);
             this.panel4.Controls.Add(this.tbFechaVencimiento);
-            this.panel4.Controls.Add(this.tb1);
             this.panel4.Controls.Add(this.cbTipo);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.tbNombre);
@@ -245,6 +248,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(484, 379);
             this.panel4.TabIndex = 14;
+            // 
+            // lblMarcaTraj
+            // 
+            this.lblMarcaTraj.AutoSize = true;
+            this.lblMarcaTraj.Location = new System.Drawing.Point(111, 116);
+            this.lblMarcaTraj.Name = "lblMarcaTraj";
+            this.lblMarcaTraj.Size = new System.Drawing.Size(171, 29);
+            this.lblMarcaTraj.TabIndex = 26;
+            this.lblMarcaTraj.Text = "Marca de tarjeta";
             // 
             // tbDocumento
             // 
@@ -290,7 +302,7 @@
             this.tb1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.tb1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
             this.tb1.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
-            this.tb1.Location = new System.Drawing.Point(336, 116);
+            this.tb1.Location = new System.Drawing.Point(370, 116);
             this.tb1.Name = "tb1";
             this.tb1.Size = new System.Drawing.Size(90, 35);
             this.tb1.TabIndex = 21;
@@ -492,14 +504,16 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
-            // lblMarcaTraj
+            // label19
             // 
-            this.lblMarcaTraj.AutoSize = true;
-            this.lblMarcaTraj.Location = new System.Drawing.Point(111, 116);
-            this.lblMarcaTraj.Name = "lblMarcaTraj";
-            this.lblMarcaTraj.Size = new System.Drawing.Size(171, 29);
-            this.lblMarcaTraj.TabIndex = 26;
-            this.lblMarcaTraj.Text = "Marca de tarjeta";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(97, 34);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(88, 33);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "Tango";
             // 
             // panel7
             // 
@@ -513,36 +527,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(297, 190);
             this.panel7.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(62, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 29);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Pago contado";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(22, 75);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 30);
-            this.textBox1.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 13F);
-            this.label4.Location = new System.Drawing.Point(18, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(254, 29);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Importe con el que pago";
             // 
             // textBox2
             // 
@@ -564,6 +548,36 @@
             this.label15.TabIndex = 21;
             this.label15.Text = "Vuelto que debo recibir";
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(22, 75);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(250, 30);
+            this.textBox1.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 13F);
+            this.label4.Location = new System.Drawing.Point(18, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(254, 29);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Importe con el que pago";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(62, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 29);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Pago contado";
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
@@ -574,6 +588,17 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(202, 281);
             this.panel8.TabIndex = 14;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(9, 170);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(180, 29);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Número de pago";
             // 
             // label16
             // 
@@ -610,27 +635,15 @@
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label18
+            // pictureBox2
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(9, 170);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(180, 29);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "Número de pago";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(97, 34);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(88, 33);
-            this.label19.TabIndex = 14;
-            this.label19.Text = "Tango";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(22, 91);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(34, 23);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
             // pantallaCotizacion
             // 
@@ -674,6 +687,7 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -731,6 +745,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
