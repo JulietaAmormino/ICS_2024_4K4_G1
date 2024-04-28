@@ -30,15 +30,3 @@ C:\Users\amarcomini\Documents\UTN\GitHub\ICS_2024_4K4_G1\Trabajos Practicos\TP06
 C:\Users\amarcomini\Documents\UTN\GitHub\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.exe
 C:\Users\amarcomini\Documents\UTN\GitHub\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pdb
 D:\Facultad\4to año\ICS\Trabajo Git\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.Front.PedidoCotizaciones.resources
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.AssemblyReference.cache
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.SuggestedBindingRedirects.cache
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pantallaCotizacion.resources
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.Front.PedidoCotizaciones.resources
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.Properties.Resources.resources
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.GenerateResource.cache
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.csproj.CoreCompileInputs.cache
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.exe
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\obj\Debug\Tango.AceptarCotizacion.pdb
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.exe.config
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.exe
-D:\Usuario\Documents\Documentos Juani\ISW\2024\Proyecto1\ICS_2024_4K4_G1\Trabajos Practicos\TP06_30042024\Tango\Tango.AceptarCotizacion\bin\Debug\Tango.AceptarCotizacion.pdb

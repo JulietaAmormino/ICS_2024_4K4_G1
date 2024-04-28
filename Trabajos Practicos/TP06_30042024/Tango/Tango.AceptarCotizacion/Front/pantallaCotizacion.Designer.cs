@@ -42,9 +42,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.rbTarjeta = new System.Windows.Forms.RadioButton();
-            this.rbContraEntrega = new System.Windows.Forms.RadioButton();
-            this.rbContadoRetirar = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tbFechaVencimiento = new System.Windows.Forms.DateTimePicker();
             this.cbTipo = new System.Windows.Forms.ComboBox();
@@ -61,6 +58,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btConfirmar = new System.Windows.Forms.Button();
             this.lbMensaje = new System.Windows.Forms.Label();
+            this.rbContadoRetirar = new System.Windows.Forms.RadioButton();
+            this.rbContraEntrega = new System.Windows.Forms.RadioButton();
+            this.rbTarjeta = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -206,42 +206,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(877, 97);
             this.panel3.TabIndex = 13;
-            // 
-            // rbTarjeta
-            // 
-            this.rbTarjeta.AutoSize = true;
-            this.rbTarjeta.Location = new System.Drawing.Point(465, 61);
-            this.rbTarjeta.Name = "rbTarjeta";
-            this.rbTarjeta.Size = new System.Drawing.Size(66, 22);
-            this.rbTarjeta.TabIndex = 11;
-            this.rbTarjeta.TabStop = true;
-            this.rbTarjeta.Text = "Tarjeta";
-            this.rbTarjeta.UseVisualStyleBackColor = true;
-            this.rbTarjeta.CheckedChanged += new System.EventHandler(this.cbFormaPago_SelectedIndexChanged);
-            // 
-            // rbContraEntrega
-            // 
-            this.rbContraEntrega.AutoSize = true;
-            this.rbContraEntrega.Location = new System.Drawing.Point(325, 61);
-            this.rbContraEntrega.Name = "rbContraEntrega";
-            this.rbContraEntrega.Size = new System.Drawing.Size(118, 22);
-            this.rbContraEntrega.TabIndex = 10;
-            this.rbContraEntrega.TabStop = true;
-            this.rbContraEntrega.Text = "Contra Entrega";
-            this.rbContraEntrega.UseVisualStyleBackColor = true;
-            this.rbContraEntrega.CheckedChanged += new System.EventHandler(this.cbFormaPago_SelectedIndexChanged);
-            // 
-            // rbContadoRetirar
-            // 
-            this.rbContadoRetirar.AutoSize = true;
-            this.rbContadoRetirar.Location = new System.Drawing.Point(153, 61);
-            this.rbContadoRetirar.Name = "rbContadoRetirar";
-            this.rbContadoRetirar.Size = new System.Drawing.Size(142, 22);
-            this.rbContadoRetirar.TabIndex = 9;
-            this.rbContadoRetirar.TabStop = true;
-            this.rbContadoRetirar.Text = "Contado Al Retirar";
-            this.rbContadoRetirar.UseVisualStyleBackColor = true;
-            this.rbContadoRetirar.CheckedChanged += new System.EventHandler(this.cbFormaPago_SelectedIndexChanged);
             // 
             // panel4
             // 
@@ -406,6 +370,39 @@
             this.lbMensaje.Name = "lbMensaje";
             this.lbMensaje.Size = new System.Drawing.Size(0, 18);
             this.lbMensaje.TabIndex = 16;
+            // 
+            // rbContadoRetirar
+            // 
+            this.rbContadoRetirar.AutoSize = true;
+            this.rbContadoRetirar.Location = new System.Drawing.Point(153, 61);
+            this.rbContadoRetirar.Name = "rbContadoRetirar";
+            this.rbContadoRetirar.Size = new System.Drawing.Size(142, 22);
+            this.rbContadoRetirar.TabIndex = 9;
+            this.rbContadoRetirar.TabStop = true;
+            this.rbContadoRetirar.Text = "Contado Al Retirar";
+            this.rbContadoRetirar.UseVisualStyleBackColor = true;
+            // 
+            // rbContraEntrega
+            // 
+            this.rbContraEntrega.AutoSize = true;
+            this.rbContraEntrega.Location = new System.Drawing.Point(325, 61);
+            this.rbContraEntrega.Name = "rbContraEntrega";
+            this.rbContraEntrega.Size = new System.Drawing.Size(118, 22);
+            this.rbContraEntrega.TabIndex = 10;
+            this.rbContraEntrega.TabStop = true;
+            this.rbContraEntrega.Text = "Contra Entrega";
+            this.rbContraEntrega.UseVisualStyleBackColor = true;
+            // 
+            // rbTarjeta
+            // 
+            this.rbTarjeta.AutoSize = true;
+            this.rbTarjeta.Location = new System.Drawing.Point(465, 61);
+            this.rbTarjeta.Name = "rbTarjeta";
+            this.rbTarjeta.Size = new System.Drawing.Size(66, 22);
+            this.rbTarjeta.TabIndex = 11;
+            this.rbTarjeta.TabStop = true;
+            this.rbTarjeta.Text = "Tarjeta";
+            this.rbTarjeta.UseVisualStyleBackColor = true;
             // 
             // pantallaCotizacion
             // 
