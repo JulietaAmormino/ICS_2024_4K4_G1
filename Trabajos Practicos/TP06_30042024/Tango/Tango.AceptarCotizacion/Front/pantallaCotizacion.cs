@@ -14,6 +14,8 @@ using System.Windows.Forms;
 using Tango.AceptarCotizacion.Datos;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlTypes;
+using Tango.AceptarCotizacion.Front;
+
 
 namespace Tango.AceptarCotizacion
 {
@@ -21,17 +23,21 @@ namespace Tango.AceptarCotizacion
     {
         private Message mess = new Message();
 
-        private string myEmail = "santiago0photography@gmail.com";
-        private string MyPassword = "miyx wklc pcgu ltqd";
+        private string myEmail = "santi00lp@gmail.com";
+        private string MyPassword = "fqfe sian hwcz pzge";
         private string MyAlias = "Tango";
         private MailMessage mCorreo;
 
         private Cotizacion cotizacion;
 
+
+        
+
         public pantallaCotizacion(Cotizacion cot)
         {
             InitializeComponent();
             CargarPantalla(cot);
+
             tb1.Format = DateTimePickerFormat.Custom;
             tb1.CustomFormat = "MM/yyyy";
             tb1.ShowUpDown = false;
@@ -56,6 +62,9 @@ namespace Tango.AceptarCotizacion
             cbTipo.Items.Add("CUIL");
             cbTipo.Items.Add("CUIT");
             cbTipo.Items.Add("Pasaporte");
+
+            cbTipoTarjeta.Items.Add("Debito");
+            cbTipoTarjeta.Items.Add("Credito");
         }
 
         private void cbFormaPago_SelectedIndexChanged(object sender, EventArgs e)
@@ -68,6 +77,7 @@ namespace Tango.AceptarCotizacion
                 tbFechaVencimiento.Enabled = true;
                 tbDocumento.Enabled = true;
                 cbTipo.Enabled = true;
+                cbTipoTarjeta.Enabled = true;
                 tbImportePago.Enabled = false;
                 tbVuelto.Enabled = false;
             }
@@ -80,6 +90,7 @@ namespace Tango.AceptarCotizacion
                 tbFechaVencimiento.Enabled = false;
                 tbDocumento.Enabled = false;
                 cbTipo.Enabled = false;
+                cbTipoTarjeta.Enabled = false;
                 tbImportePago.Enabled = true;
                 tbVuelto.Enabled = true;
             }
@@ -96,7 +107,8 @@ namespace Tango.AceptarCotizacion
                     || String.IsNullOrEmpty(tbFechaVencimiento.Text)
                     || String.IsNullOrEmpty(tbNombre.Text)
                     || String.IsNullOrEmpty(tbDocumento.Text)
-                    || String.IsNullOrEmpty(cbTipo.Text))
+                    || String.IsNullOrEmpty(cbTipo.Text)
+                    || String.IsNullOrEmpty(cbTipoTarjeta.Text))
                 {
                     MessageBox.Show("Complete los datos de la tarjeta");
                 }
@@ -124,20 +136,25 @@ namespace Tango.AceptarCotizacion
                 {
                     MessageBox.Show("Ingrese un tipo de documento");
                 }
-                else if (!String.IsNullOrEmpty(cbTipo.Text))
+                else if (cbTipo.Text == "DNI" && tbDocumento.Text.Length != 8)
+                    MessageBox.Show("Longitud del numero de documento incorrecto, los tipo DNI tienen 8 digitos");
+                else if ((cbTipo.Text == "CUIL" || cbTipo.Text == "CUIT") && tbDocumento.Text.Length != 11)
+                    MessageBox.Show("Longitud del numero de documento incorrecto, los tipo CUIL/CUIT tienen 11 digitos");
+                else if (cbTipo.Text == "Pasaporte" && tbDocumento.Text.Length != 9)
+                    MessageBox.Show("Longitud del numero de documento incorrecto, los tipo Pasaporte tienen 9 digitos");
+                else if (DateTime.ParseExact(tbFechaVencimiento.Text, "MM/yy", System.Globalization.CultureInfo.InvariantCulture).Year <= DateTime.Now.Year
+                        || (DateTime.ParseExact(tbFechaVencimiento.Text, "MM/yy", System.Globalization.CultureInfo.InvariantCulture).Year >= DateTime.Now.Year &&  DateTime.ParseExact(tbFechaVencimiento.Text, "MM/yy", System.Globalization.CultureInfo.InvariantCulture).Month <= DateTime.Now.Month))
                 {
-                    if (cbTipo.Text == "DNI" && tbDocumento.Text.Length != 8)
-                        MessageBox.Show("Longitud del numero de documento incorrecto, los tipo DNI tienen 8 digitos");
-                    else if ((cbTipo.Text == "CUIL" || cbTipo.Text == "CUIT") && tbDocumento.Text.Length != 10)
-                        MessageBox.Show("Longitud del numero de documento incorrecto, los tipo CUIL/CUIT tienen 8 digitos");
-                    else if (cbTipo.Text == "Pasaporte" && tbDocumento.Text.Length != 9)
-                        MessageBox.Show("Longitud del numero de documento incorrecto, los tipo Pasaporte tienen 8 digitos");
+                    MessageBox.Show("Fecha de tarjeta incorrecta o Vencida");
                 }
-                else if ((int.Parse(tbNumeroTarjeta.Text) % 2) == 0)
+                else if ((decimal.Parse(tbNumeroTarjeta.Text) % 2) == 0)
                 {
-                    MessageBox.Show("Fondos insuficientes");
+                    if(cbTipoTarjeta.Text == "Debito")
+                        MessageBox.Show("Fondos insuficientes.");
+                    else
+                        MessageBox.Show("Tarjeta sin Limite Disponible.");
                 }
-                else if ((int.Parse(tbNumeroTarjeta.Text) % 3) == 0)
+                else if ((decimal.Parse(tbNumeroTarjeta.Text) % 3) == 0)
                 {
                     MessageBox.Show("La tarjeta ingresada no fue encontrada");
                 }
@@ -149,6 +166,8 @@ namespace Tango.AceptarCotizacion
                                     + "El pago ya fue efectuado mediante Tarjeta.";
 
                     EnviarMail(txtSubject, txtMessage);
+
+                    
 
                     cotizacion.pedido.estado = 1;
                     btConfirmar.Enabled = false;
@@ -180,6 +199,7 @@ namespace Tango.AceptarCotizacion
                         txtMessage = txtMessage + "El pago sera efectuado contra entrega.";
 
                     EnviarMail(txtSubject, txtMessage);
+
 
                     cotizacion.pedido.estado = 1;
                     btConfirmar.Enabled = false;
@@ -240,6 +260,30 @@ namespace Tango.AceptarCotizacion
             {
                 tbVuelto.Text = "";
             }
+        }
+
+        private void tbNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true; // Suprime el carácter
+            }
+        }
+
+        private void tbFechaVencimiento_TextChanged(object sender, EventArgs e)
+        {
+            //int indiceSeparador = tbFechaVencimiento.Text.IndexOf('/');
+            //if (indiceSeparador != -1)
+            //{
+            //    string primeraParte = tbFechaVencimiento.Text.Substring(0, indiceSeparador);
+            //    string segundaParte = tbFechaVencimiento.Text.Substring(indiceSeparador + 1);
+
+            //    if (int.Parse(primeraParte) > 12)
+            //    {
+            //        tbFechaVencimiento.Text = "";
+            //        MessageBox.Show("Fecha de vencimiento invalida");
+            //    }
+            //}
         }
     }
 }

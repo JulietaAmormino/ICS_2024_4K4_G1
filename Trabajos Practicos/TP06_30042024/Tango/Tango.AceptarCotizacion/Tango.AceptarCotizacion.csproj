@@ -62,6 +62,12 @@
     <Compile Include="Front\pantallaCotizacion.Designer.cs">
       <DependentUpon>pantallaCotizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Front\PantallaTransportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front\PantallaTransportista.Designer.cs">
+      <DependentUpon>PantallaTransportista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Front\PedidoCotizaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Front\pantallaCotizacion.resx">
       <DependentUpon>pantallaCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front\PantallaTransportista.resx">
+      <DependentUpon>PantallaTransportista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Front\PedidoCotizaciones.resx">
       <DependentUpon>PedidoCotizaciones.cs</DependentUpon>

@@ -29,7 +29,7 @@ namespace Tango.AceptarCotizacion
             {
                 nombre = "Fran",
                 apellido = "Gomez",
-                mail = "santi00lp@gmail.com",
+                mail = "santiago_00lp@hotmail.com",
                 clasificacion = (decimal) 3.1,
                 metodosPago = new List<MetodoDePago> { alRetirar, contraEntrega, tarjeta, debito}
             };
@@ -43,25 +43,25 @@ namespace Tango.AceptarCotizacion
             };
             Transportista trans2 = new Transportista()
             {
-                nombre = "Carlos",
-                apellido = "Bala",
-                mail = "mailejemplo@gmail.com",
+                nombre = "Mickaela",
+                apellido = "Crespo",
+                mail = "mickaelacrespo@gmail.com",
                 clasificacion = (decimal)4.3,
                 metodosPago = new List<MetodoDePago> { alRetirar, contraEntrega, tarjeta, debito }
             };
             Transportista trans3 = new Transportista()
             {
-                nombre = "Guillermo",
-                apellido = "Franchela",
-                mail = "mailejemplo@gmail.com",
+                nombre = "Georgina",
+                apellido = "González",
+                mail = "gg.georginagonzalez@gmail.com",
                 clasificacion = (decimal)4.5,
                 metodosPago = new List<MetodoDePago> { alRetirar, contraEntrega, tarjeta, debito }
             };
             Transportista trans4 = new Transportista()
             {
-                nombre = "Marcos",
-                apellido = "Acuña",
-                mail = "mailejemplo@gmail.com",
+                nombre = "Constanza",
+                apellido = "Garnero",
+                mail = "constanzagarnero@gmail.com",
                 clasificacion = (decimal)2.9,
                 metodosPago = new List<MetodoDePago> { alRetirar, contraEntrega, tarjeta, debito }
             };
@@ -72,6 +72,58 @@ namespace Tango.AceptarCotizacion
                 tipoDeCarga = "Paquete",
                 fechaEntrega = new DateTime(2024, 5, 15),
                 estado = 0
+            };
+
+            Pedido ped1 = new Pedido()
+            {
+                idPedido = 1355,
+                tipoDeCarga = "Paquete",
+                fechaEntrega = new DateTime(2024, 5, 15),
+                estado = 0
+            };
+
+            Pedido ped2 = new Pedido()
+            {
+                idPedido = 1262,
+                tipoDeCarga = "Paquete",
+                fechaEntrega = new DateTime(2024, 5, 15),
+                estado = 0
+            };
+
+            Pedido ped3 = new Pedido()
+            {
+                idPedido = 1652,
+                tipoDeCarga = "Paquete",
+                fechaEntrega = new DateTime(2024, 5, 15),
+                estado = 0
+            };
+
+            Cotizacion cotizacion1 = new Cotizacion()
+            {
+                idCotizacion = 710,
+                importe = 2578,
+                fechaRetiro = new DateTime(2024, 5, 30),
+                fechaEntrega = new DateTime(2024, 5, 31),
+                transportista = trans,
+                pedido = ped1
+            };
+            Cotizacion cotizacion2 = new Cotizacion()
+            {
+                idCotizacion = 875,
+                importe = 10256,
+                fechaRetiro = new DateTime(2024, 5, 1),
+                fechaEntrega = new DateTime(2024, 5, 20),
+                transportista = trans,
+                pedido = ped2
+            };
+            Cotizacion cotizacion3 = new Cotizacion()
+            {
+                idCotizacion = 766,
+                importe = 1420,
+                fechaRetiro = new DateTime(2024, 5, 7),
+                fechaEntrega = new DateTime(2024, 5, 18),
+                transportista = trans,
+                pedido = ped3
             };
 
 
@@ -97,7 +149,7 @@ namespace Tango.AceptarCotizacion
             {
                 idCotizacion = 792,
                 importe = 1500,
-                fechaRetiro = new DateTime(2024, 4, 12),
+                fechaRetiro = new DateTime(2024, 5, 12),
                 fechaEntrega = new DateTime(2024, 5, 15),
                 transportista = trans2,
                 pedido = ped
@@ -106,7 +158,7 @@ namespace Tango.AceptarCotizacion
             {
                 idCotizacion = 793,
                 importe = 1320,
-                fechaRetiro = new DateTime(2024, 4, 15),
+                fechaRetiro = new DateTime(2024, 5, 15),
                 fechaEntrega = new DateTime(2024, 5, 15),
                 transportista = trans3,
                 pedido = ped
@@ -123,7 +175,14 @@ namespace Tango.AceptarCotizacion
 
             List<Cotizacion> cotizacions = new List<Cotizacion>() { cot, cot1, cot2, cot3, cot4 };
 
-            Application.Run(new PedidoCotizaciones(ped, cotizacions));
+            List<Cotizacion> cotizacions1 = new List<Cotizacion>() { cot, cotizacion1, cotizacion2, cotizacion3};
+
+            var pantalla = new PedidoCotizaciones(ped, cotizacions);
+
+            new PantallaTransportista(cotizacions1, pantalla).Show();
+            Application.Run(pantalla);
+            //new PedidoCotizaciones(ped, cotizacions).Show();
+
 
         }
     }

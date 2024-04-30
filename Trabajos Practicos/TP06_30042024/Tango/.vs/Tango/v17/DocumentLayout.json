@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\",
+  "WorkspaceRootPath": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|d:\\facultad\\4to a\u00F1o\\ics\\trabajo git\\ics_2024_4k4_g1\\trabajos practicos\\tp06_30042024\\tango\\tango.aceptarcotizacion\\front\\pantallacotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|c:\\users\\ssalas\\documents\\github\\ics_2024_4k4_g1\\trabajos practicos\\tp06_30042024\\tango\\tango.aceptarcotizacion\\front\\pantallacotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\front\\pantallacotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\tango.aceptarcotizacion\\front\\pantallacotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\front\\pantallacotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\tango.aceptarcotizacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|d:\\facultad\\4to a\u00F1o\\ics\\trabajo git\\ics_2024_4k4_g1\\trabajos practicos\\tp06_30042024\\tango\\tango.aceptarcotizacion\\front\\pedidocotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\front\\pedidocotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|c:\\users\\ssalas\\documents\\github\\ics_2024_4k4_g1\\trabajos practicos\\tp06_30042024\\tango\\tango.aceptarcotizacion\\front\\pantallatransportista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\front\\pantallatransportista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|d:\\facultad\\4to a\u00F1o\\ics\\trabajo git\\ics_2024_4k4_g1\\trabajos practicos\\tp06_30042024\\tango\\tango.aceptarcotizacion\\front\\pedidocotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|c:\\users\\ssalas\\documents\\github\\ics_2024_4k4_g1\\trabajos practicos\\tp06_30042024\\tango\\tango.aceptarcotizacion\\front\\pantallatransportista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\front\\pantallatransportista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|c:\\users\\ssalas\\documents\\github\\ics_2024_4k4_g1\\trabajos practicos\\tp06_30042024\\tango\\tango.aceptarcotizacion\\front\\pedidocotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\front\\pedidocotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|d:\\facultad\\4to a\u00F1o\\ics\\trabajo git\\ics_2024_4k4_g1\\trabajos practicos\\tp06_30042024\\tango\\tango.aceptarcotizacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\tango.aceptarcotizacion\\front\\pantallacotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\front\\pantallacotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\tango.aceptarcotizacion\\front\\pedidocotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA1A795B-5667-4B24-99B8-9CA2417F3DA4}|Tango.AceptarCotizacion\\Tango.AceptarCotizacion.csproj|solutionrelative:tango.aceptarcotizacion\\front\\pedidocotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,73 +38,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "pantallaCotizacion.cs",
-              "DocumentMoniker": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
+              "DocumentMoniker": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
               "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
-              "ToolTip": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
+              "ToolTip": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
               "RelativeToolTip": "Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAAKIAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:45:37.056Z",
+              "WhenOpened": "2024-04-30T20:21:51.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PantallaTransportista.cs",
+              "DocumentMoniker": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PantallaTransportista.cs",
+              "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Front\\PantallaTransportista.cs",
+              "ToolTip": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PantallaTransportista.cs",
+              "RelativeToolTip": "Tango.AceptarCotizacion\\Front\\PantallaTransportista.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAqwBoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T20:28:34.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PantallaTransportista.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PantallaTransportista.cs",
+              "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Front\\PantallaTransportista.cs",
+              "ToolTip": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PantallaTransportista.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tango.AceptarCotizacion\\Front\\PantallaTransportista.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T20:26:54.911Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "pantallaCotizacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
+              "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
+              "ToolTip": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T23:00:21.981Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "PedidoCotizaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
+              "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
+              "ToolTip": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
+              "RelativeToolTip": "Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwDgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T20:33:35.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Program.cs",
               "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Program.cs",
-              "ToolTip": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Program.cs",
+              "ToolTip": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Program.cs",
               "RelativeToolTip": "Tango.AceptarCotizacion\\Program.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T15:42:49.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PedidoCotizaciones.cs",
-              "DocumentMoniker": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
-              "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
-              "ToolTip": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
-              "RelativeToolTip": "Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:42:28.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PedidoCotizaciones.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
               "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs",
-              "ToolTip": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Ssalas\\Documents\\GitHub\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs [Dise\u00F1o]",
               "RelativeToolTip": "Tango.AceptarCotizacion\\Front\\PedidoCotizaciones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T15:36:22.68Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "pantallaCotizacion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
-              "RelativeDocumentMoniker": "Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs",
-              "ToolTip": "D:\\Facultad\\4to a\u00F1o\\ICS\\Trabajo Git\\ICS_2024_4K4_G1\\Trabajos Practicos\\TP06_30042024\\Tango\\Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Tango.AceptarCotizacion\\Front\\pantallaCotizacion.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T23:00:21.981Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
