@@ -344,14 +344,13 @@
             // 
             this.btnConfirmar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
-            this.btnConfirmar.Enabled = false;
             this.btnConfirmar.Font = new System.Drawing.Font("Gadugi", 13F);
             this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirmar.Location = new System.Drawing.Point(823, 581);
+            this.btnConfirmar.Location = new System.Drawing.Point(824, 581);
             this.btnConfirmar.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(203, 37);
-            this.btnConfirmar.TabIndex = 25;
+            this.btnConfirmar.Size = new System.Drawing.Size(202, 37);
+            this.btnConfirmar.TabIndex = 26;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
@@ -361,8 +360,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1054, 632);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnConfirmar);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -411,10 +410,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.DataGridViewTextBoxColumn nroCotizacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn transportista;
         private System.Windows.Forms.DataGridViewTextBoxColumn importe;
         private System.Windows.Forms.DataGridViewLinkColumn fRetiro;
+        private System.Windows.Forms.Button btnConfirmar;
     }
 }

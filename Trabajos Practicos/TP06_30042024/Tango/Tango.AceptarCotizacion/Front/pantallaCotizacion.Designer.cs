@@ -435,7 +435,7 @@
             this.btConfirmar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
             this.btConfirmar.Font = new System.Drawing.Font("Gadugi", 13F);
-            this.btConfirmar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.btConfirmar.ForeColor = System.Drawing.Color.Black;
             this.btConfirmar.Location = new System.Drawing.Point(828, 530);
             this.btConfirmar.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.btConfirmar.Name = "btConfirmar";
@@ -675,7 +675,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.button1.Font = new System.Drawing.Font("Gadugi", 13F);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(828, 581);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.button1.Name = "button1";

@@ -32,6 +32,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -41,14 +42,13 @@
             this.importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fRetiro = new System.Windows.Forms.DataGridViewLinkColumn();
             this.psh = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btConfirmar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCotizaciones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label19
@@ -86,6 +86,16 @@
             this.groupBox1.Size = new System.Drawing.Size(1085, 70);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(152, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
             // 
             // panel3
             // 
@@ -182,36 +192,26 @@
             this.psh.Size = new System.Drawing.Size(0, 16);
             this.psh.TabIndex = 27;
             // 
-            // pictureBox2
+            // button1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(152, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btConfirmar
-            // 
-            this.btConfirmar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
-            this.btConfirmar.Font = new System.Drawing.Font("Gadugi", 13F);
-            this.btConfirmar.ForeColor = System.Drawing.Color.Black;
-            this.btConfirmar.Location = new System.Drawing.Point(605, 426);
-            this.btConfirmar.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
-            this.btConfirmar.Name = "btConfirmar";
-            this.btConfirmar.Size = new System.Drawing.Size(202, 37);
-            this.btConfirmar.TabIndex = 28;
-            this.btConfirmar.Text = "Confirmar";
-            this.btConfirmar.UseVisualStyleBackColor = false;
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
+            this.button1.Font = new System.Drawing.Font("Gadugi", 13F);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(605, 426);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 37);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Confirmar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // PantallaTransportista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 474);
-            this.Controls.Add(this.btConfirmar);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.psh);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel3);
@@ -223,11 +223,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridCotizaciones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,6 +248,6 @@
         private System.Windows.Forms.DataGridViewLinkColumn fRetiro;
         private System.Windows.Forms.Label psh;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btConfirmar;
+        private System.Windows.Forms.Button button1;
     }
 }
