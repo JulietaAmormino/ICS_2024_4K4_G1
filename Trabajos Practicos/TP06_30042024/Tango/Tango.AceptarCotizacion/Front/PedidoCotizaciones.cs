@@ -26,6 +26,7 @@ namespace Tango.AceptarCotizacion.Front
             CargarPantalla(ped, cots);
             cotizaciones = cots;
             pedido = ped;
+            colorGrilla();
         }
 
         private void CargarPantalla (Pedido ped, List<Cotizacion> cots)
@@ -80,6 +81,13 @@ namespace Tango.AceptarCotizacion.Front
             this.Show();
 
             ActualizarPantalla(cot);
+        }
+
+        private void colorGrilla()
+        {
+            // Establecer el color de fondo y fuente para toda la grilla
+            gridCotizaciones.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#DFF8EB");
+            gridCotizaciones.DefaultCellStyle.ForeColor = Color.Black;
         }
     }
 }

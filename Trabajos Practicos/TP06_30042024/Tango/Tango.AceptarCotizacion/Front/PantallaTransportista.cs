@@ -17,6 +17,7 @@ namespace Tango.AceptarCotizacion.Front
         public PantallaTransportista(List<Cotizacion> cots, PedidoCotizaciones pantalla)
         {
             InitializeComponent();
+            colorGrilla();
 
             label1.Text = "Tus Cotizaciones " + cots[0].transportista.nombre.ToString() + " " + cots[0].transportista.apellido.ToString();
 
@@ -36,6 +37,13 @@ namespace Tango.AceptarCotizacion.Front
                 gridCotizaciones.Rows[i].Cells[2].Value = cots[i].importe;
                 gridCotizaciones.Rows[i].Cells[3].Value = cots[i].fechaRetiro.ToString("dd/MM/yyyy");
             }
+        }
+
+        private void colorGrilla()
+        {
+            // Establecer el color de fondo y fuente para toda la grilla
+            gridCotizaciones.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#DFF8EB");
+            gridCotizaciones.DefaultCellStyle.ForeColor = Color.Black;
         }
     }
 }
