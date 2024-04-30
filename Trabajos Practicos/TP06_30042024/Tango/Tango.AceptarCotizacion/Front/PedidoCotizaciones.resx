@@ -133,7 +133,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAuhSURBVHhe7Z3Z
+        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAuhSURBVHhe7Z3Z
         bxvXFcbdNg9N0eWtaB/boAtQoAtatHnoY9ENSJsgKJq67VvboP0bEsd27da2EtiSKVFe40Wid1t2Y1t2
         bEte5MqxRC2WFC8SSUtWYJGUl9gVRzSp23OoI4UaHUl3OEPOFXU+4AcLJjnz3e+cuXM5BIfLRCKRSCQS
         icpJg9bICzEr+Y9oKhGKWolwdDyehH/TgFqANLxmFP4N42txG7gt2qzIZDUp9VxsPLEcin3VVlT3jCdb
@@ -186,4 +186,16 @@
         VTDWrWwG84GZPhy8+AbFLBKJRCKRSORCy5b9H/kF52m14CN0AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="nroCotizacion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="transportista.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="importe.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="fRetiro.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

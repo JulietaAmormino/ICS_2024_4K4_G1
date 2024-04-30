@@ -36,6 +36,7 @@
             this.lblFechaEntrega = new System.Windows.Forms.Label();
             this.lblImporte = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,7 +48,6 @@
             this.tbNumeroTarjeta = new System.Windows.Forms.MaskedTextBox();
             this.tbPin = new System.Windows.Forms.MaskedTextBox();
             this.tbFechaVencimiento = new System.Windows.Forms.MaskedTextBox();
-            this.tb1 = new System.Windows.Forms.DateTimePicker();
             this.cbTipo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
@@ -70,9 +70,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbVuelto = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbImportePago = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -80,8 +80,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tb1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,17 +92,16 @@
             this.groupBox1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTransNombre
             // 
             this.lblTransNombre.AutoSize = true;
-            this.lblTransNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTransNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTransNombre.ForeColor = System.Drawing.Color.White;
             this.lblTransNombre.Location = new System.Drawing.Point(17, 57);
             this.lblTransNombre.Name = "lblTransNombre";
-            this.lblTransNombre.Size = new System.Drawing.Size(85, 25);
+            this.lblTransNombre.Size = new System.Drawing.Size(89, 26);
             this.lblTransNombre.TabIndex = 1;
             this.lblTransNombre.Text = "Nombre";
             // 
@@ -130,22 +130,22 @@
             // lblFechaRetiro
             // 
             this.lblFechaRetiro.AutoSize = true;
-            this.lblFechaRetiro.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaRetiro.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaRetiro.ForeColor = System.Drawing.Color.Black;
             this.lblFechaRetiro.Location = new System.Drawing.Point(21, 70);
             this.lblFechaRetiro.Name = "lblFechaRetiro";
-            this.lblFechaRetiro.Size = new System.Drawing.Size(41, 31);
+            this.lblFechaRetiro.Size = new System.Drawing.Size(44, 33);
             this.lblFechaRetiro.TabIndex = 4;
             this.lblFechaRetiro.Text = "FR";
             // 
             // lblFechaEntrega
             // 
             this.lblFechaEntrega.AutoSize = true;
-            this.lblFechaEntrega.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaEntrega.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaEntrega.ForeColor = System.Drawing.Color.Black;
             this.lblFechaEntrega.Location = new System.Drawing.Point(23, 70);
             this.lblFechaEntrega.Name = "lblFechaEntrega";
-            this.lblFechaEntrega.Size = new System.Drawing.Size(39, 31);
+            this.lblFechaEntrega.Size = new System.Drawing.Size(41, 33);
             this.lblFechaEntrega.TabIndex = 5;
             this.lblFechaEntrega.Text = "FE";
             // 
@@ -171,6 +171,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(371, 135);
             this.panel1.TabIndex = 11;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(22, 91);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(34, 23);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
             // label5
             // 
@@ -296,26 +306,15 @@
             this.tbFechaVencimiento.Size = new System.Drawing.Size(63, 35);
             this.tbFechaVencimiento.TabIndex = 22;
             // 
-            // tb1
-            // 
-            this.tb1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.tb1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
-            this.tb1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
-            this.tb1.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
-            this.tb1.Location = new System.Drawing.Point(370, 116);
-            this.tb1.Name = "tb1";
-            this.tb1.Size = new System.Drawing.Size(90, 35);
-            this.tb1.TabIndex = 21;
-            this.tb1.Value = new System.DateTime(2024, 4, 1, 0, 0, 0, 0);
-            // 
             // cbTipo
             // 
             this.cbTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
-            this.cbTipo.Enabled = false;
+            this.cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipo.FormattingEnabled = true;
             this.cbTipo.Location = new System.Drawing.Point(229, 268);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(231, 37);
+            this.cbTipo.Sorted = true;
             this.cbTipo.TabIndex = 10;
             // 
             // label11
@@ -358,7 +357,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(180, 167);
+            this.label8.Location = new System.Drawing.Point(195, 167);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(196, 29);
             this.label8.TabIndex = 16;
@@ -458,6 +457,7 @@
             this.rbTarjeta.TabStop = true;
             this.rbTarjeta.Text = "Tarjeta";
             this.rbTarjeta.UseVisualStyleBackColor = true;
+            this.rbTarjeta.CheckedChanged += new System.EventHandler(this.cbFormaPago_SelectedIndexChanged);
             // 
             // rbContraEntrega
             // 
@@ -470,6 +470,7 @@
             this.rbContraEntrega.TabStop = true;
             this.rbContraEntrega.Text = "Contado contra entrega";
             this.rbContraEntrega.UseVisualStyleBackColor = true;
+            this.rbContraEntrega.CheckedChanged += new System.EventHandler(this.cbFormaPago_SelectedIndexChanged);
             // 
             // rbContadoRetirar
             // 
@@ -482,6 +483,7 @@
             this.rbContadoRetirar.TabStop = true;
             this.rbContadoRetirar.Text = "Contado al retirar";
             this.rbContadoRetirar.UseVisualStyleBackColor = true;
+            this.rbContadoRetirar.CheckedChanged += new System.EventHandler(this.cbFormaPago_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -518,9 +520,9 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.textBox2);
+            this.panel7.Controls.Add(this.tbVuelto);
             this.panel7.Controls.Add(this.label15);
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.tbImportePago);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Location = new System.Drawing.Point(24, 428);
@@ -528,15 +530,15 @@
             this.panel7.Size = new System.Drawing.Size(297, 190);
             this.panel7.TabIndex = 15;
             // 
-            // textBox2
+            // tbVuelto
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(20, 141);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(252, 30);
-            this.textBox2.TabIndex = 22;
+            this.tbVuelto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
+            this.tbVuelto.Enabled = false;
+            this.tbVuelto.Location = new System.Drawing.Point(20, 141);
+            this.tbVuelto.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+            this.tbVuelto.Name = "tbVuelto";
+            this.tbVuelto.Size = new System.Drawing.Size(252, 30);
+            this.tbVuelto.TabIndex = 22;
             // 
             // label15
             // 
@@ -548,15 +550,16 @@
             this.label15.TabIndex = 21;
             this.label15.Text = "Vuelto que debo recibir";
             // 
-            // textBox1
+            // tbImportePago
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(22, 75);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 30);
-            this.textBox1.TabIndex = 20;
+            this.tbImportePago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
+            this.tbImportePago.Enabled = false;
+            this.tbImportePago.Location = new System.Drawing.Point(22, 75);
+            this.tbImportePago.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+            this.tbImportePago.Name = "tbImportePago";
+            this.tbImportePago.Size = new System.Drawing.Size(250, 30);
+            this.tbImportePago.TabIndex = 20;
+            this.tbImportePago.TextChanged += new System.EventHandler(this.tbImportePago_TextChanged);
             // 
             // label4
             // 
@@ -634,23 +637,26 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // pictureBox2
+            // tb1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(22, 91);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 23);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            this.tb1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.tb1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.tb1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.tb1.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.tb1.Location = new System.Drawing.Point(352, 378);
+            this.tb1.Name = "tb1";
+            this.tb1.Size = new System.Drawing.Size(90, 35);
+            this.tb1.TabIndex = 21;
+            this.tb1.Value = new System.DateTime(2024, 4, 1, 0, 0, 0, 0);
             // 
             // pantallaCotizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1050, 637);
+            this.ClientSize = new System.Drawing.Size(1050, 634);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -667,9 +673,11 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "pantallaCotizacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aceptacion de Cotizacion";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -687,7 +695,6 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -721,7 +728,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.MaskedTextBox tbFechaVencimiento;
-        private System.Windows.Forms.DateTimePicker tb1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.RadioButton rbTarjeta;
@@ -734,9 +740,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblMarcaTraj;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbVuelto;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbImportePago;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel8;
@@ -746,6 +752,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.DateTimePicker tb1;
     }
 }
 
