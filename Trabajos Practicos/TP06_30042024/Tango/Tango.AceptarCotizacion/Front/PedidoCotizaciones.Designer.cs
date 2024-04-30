@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PedidoCotizaciones));
             this.gridCotizaciones = new System.Windows.Forms.DataGridView();
+            this.nroCotizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.transportista = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fRetiro = new System.Windows.Forms.DataGridViewLinkColumn();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -50,10 +54,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.nroCotizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.transportista = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fRetiro = new System.Windows.Forms.DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridCotizaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -76,13 +76,45 @@
             this.importe,
             this.fRetiro});
             this.gridCotizaciones.Location = new System.Drawing.Point(24, 50);
-            this.gridCotizaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridCotizaciones.Margin = new System.Windows.Forms.Padding(4);
             this.gridCotizaciones.Name = "gridCotizaciones";
             this.gridCotizaciones.ReadOnly = true;
             this.gridCotizaciones.RowHeadersWidth = 51;
             this.gridCotizaciones.Size = new System.Drawing.Size(974, 241);
             this.gridCotizaciones.TabIndex = 8;
             this.gridCotizaciones.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCotizaciones_CellClick);
+            // 
+            // nroCotizacion
+            // 
+            this.nroCotizacion.HeaderText = "Nro Cotizacion";
+            this.nroCotizacion.MinimumWidth = 6;
+            this.nroCotizacion.Name = "nroCotizacion";
+            this.nroCotizacion.ReadOnly = true;
+            this.nroCotizacion.Width = 200;
+            // 
+            // transportista
+            // 
+            this.transportista.HeaderText = "Transportista";
+            this.transportista.MinimumWidth = 6;
+            this.transportista.Name = "transportista";
+            this.transportista.ReadOnly = true;
+            this.transportista.Width = 300;
+            // 
+            // importe
+            // 
+            this.importe.HeaderText = "Importe";
+            this.importe.MinimumWidth = 6;
+            this.importe.Name = "importe";
+            this.importe.ReadOnly = true;
+            this.importe.Width = 200;
+            // 
+            // fRetiro
+            // 
+            this.fRetiro.HeaderText = "Fecha Retiro";
+            this.fRetiro.MinimumWidth = 6;
+            this.fRetiro.Name = "fRetiro";
+            this.fRetiro.ReadOnly = true;
+            this.fRetiro.Width = 200;
             // 
             // label19
             // 
@@ -319,38 +351,6 @@
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
-            // nroCotizacion
-            // 
-            this.nroCotizacion.HeaderText = "Nro Cotizacion";
-            this.nroCotizacion.MinimumWidth = 6;
-            this.nroCotizacion.Name = "nroCotizacion";
-            this.nroCotizacion.ReadOnly = true;
-            this.nroCotizacion.Width = 200;
-            // 
-            // transportista
-            // 
-            this.transportista.HeaderText = "Transportista";
-            this.transportista.MinimumWidth = 6;
-            this.transportista.Name = "transportista";
-            this.transportista.ReadOnly = true;
-            this.transportista.Width = 300;
-            // 
-            // importe
-            // 
-            this.importe.HeaderText = "Importe";
-            this.importe.MinimumWidth = 6;
-            this.importe.Name = "importe";
-            this.importe.ReadOnly = true;
-            this.importe.Width = 200;
-            // 
-            // fRetiro
-            // 
-            this.fRetiro.HeaderText = "Fecha Retiro";
-            this.fRetiro.MinimumWidth = 6;
-            this.fRetiro.Name = "fRetiro";
-            this.fRetiro.ReadOnly = true;
-            this.fRetiro.Width = 200;
-            // 
             // PedidoCotizaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -360,7 +360,7 @@
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PedidoCotizaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido Cotizaciones";

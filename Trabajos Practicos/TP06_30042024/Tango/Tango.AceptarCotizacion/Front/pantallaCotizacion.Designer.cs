@@ -45,6 +45,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblMarcaTraj = new System.Windows.Forms.Label();
             this.tbDocumento = new System.Windows.Forms.MaskedTextBox();
+            this.tb1 = new System.Windows.Forms.DateTimePicker();
             this.tbNumeroTarjeta = new System.Windows.Forms.MaskedTextBox();
             this.tbPin = new System.Windows.Forms.MaskedTextBox();
             this.tbFechaVencimiento = new System.Windows.Forms.MaskedTextBox();
@@ -80,7 +81,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.tb1 = new System.Windows.Forms.DateTimePicker();
+            this.cbTipoTarjeta = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -237,6 +238,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.cbTipoTarjeta);
             this.panel4.Controls.Add(this.lblMarcaTraj);
             this.panel4.Controls.Add(this.tbDocumento);
             this.panel4.Controls.Add(this.tb1);
@@ -262,11 +264,11 @@
             // lblMarcaTraj
             // 
             this.lblMarcaTraj.AutoSize = true;
-            this.lblMarcaTraj.Location = new System.Drawing.Point(111, 116);
+            this.lblMarcaTraj.Location = new System.Drawing.Point(17, 66);
             this.lblMarcaTraj.Name = "lblMarcaTraj";
-            this.lblMarcaTraj.Size = new System.Drawing.Size(171, 29);
+            this.lblMarcaTraj.Size = new System.Drawing.Size(159, 29);
             this.lblMarcaTraj.TabIndex = 26;
-            this.lblMarcaTraj.Text = "Marca de tarjeta";
+            this.lblMarcaTraj.Text = "Tipo de Tarjeta";
             // 
             // tbDocumento
             // 
@@ -278,10 +280,22 @@
             this.tbDocumento.TabIndex = 25;
             this.tbDocumento.ValidatingType = typeof(int);
             // 
+            // tb1
+            // 
+            this.tb1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.tb1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.tb1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.tb1.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.tb1.Location = new System.Drawing.Point(352, 378);
+            this.tb1.Name = "tb1";
+            this.tb1.Size = new System.Drawing.Size(90, 35);
+            this.tb1.TabIndex = 21;
+            this.tb1.Value = new System.DateTime(2024, 4, 1, 0, 0, 0, 0);
+            // 
             // tbNumeroTarjeta
             // 
             this.tbNumeroTarjeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
-            this.tbNumeroTarjeta.Location = new System.Drawing.Point(116, 68);
+            this.tbNumeroTarjeta.Location = new System.Drawing.Point(116, 106);
             this.tbNumeroTarjeta.Mask = "999999999999999999";
             this.tbNumeroTarjeta.Name = "tbNumeroTarjeta";
             this.tbNumeroTarjeta.Size = new System.Drawing.Size(344, 35);
@@ -305,6 +319,7 @@
             this.tbFechaVencimiento.Name = "tbFechaVencimiento";
             this.tbFechaVencimiento.Size = new System.Drawing.Size(63, 35);
             this.tbFechaVencimiento.TabIndex = 22;
+            this.tbFechaVencimiento.TextChanged += new System.EventHandler(this.tbFechaVencimiento_TextChanged);
             // 
             // cbTipo
             // 
@@ -335,6 +350,7 @@
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(344, 35);
             this.tbNombre.TabIndex = 18;
+            this.tbNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNombre_KeyPress);
             // 
             // label10
             // 
@@ -375,7 +391,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 71);
+            this.label6.Location = new System.Drawing.Point(17, 118);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 29);
             this.label6.TabIndex = 11;
@@ -639,17 +655,14 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // tb1
+            // cbTipoTarjeta
             // 
-            this.tb1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.tb1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
-            this.tb1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
-            this.tb1.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
-            this.tb1.Location = new System.Drawing.Point(352, 378);
-            this.tb1.Name = "tb1";
-            this.tb1.Size = new System.Drawing.Size(90, 35);
-            this.tb1.TabIndex = 21;
-            this.tb1.Value = new System.DateTime(2024, 4, 1, 0, 0, 0, 0);
+            this.cbTipoTarjeta.Enabled = false;
+            this.cbTipoTarjeta.FormattingEnabled = true;
+            this.cbTipoTarjeta.Location = new System.Drawing.Point(185, 59);
+            this.cbTipoTarjeta.Name = "cbTipoTarjeta";
+            this.cbTipoTarjeta.Size = new System.Drawing.Size(121, 37);
+            this.cbTipoTarjeta.TabIndex = 27;
             // 
             // pantallaCotizacion
             // 
@@ -753,6 +766,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DateTimePicker tb1;
+        private System.Windows.Forms.ComboBox cbTipoTarjeta;
     }
 }
 

@@ -18,6 +18,8 @@ namespace Tango.AceptarCotizacion.Front
         Cotizacion cot;
         Pedido pedido;
 
+        public event EventHandler<string> SendMessageEvent;
+
         public PedidoCotizaciones(Pedido ped, List<Cotizacion> cots )
         {
             InitializeComponent();
@@ -46,11 +48,13 @@ namespace Tango.AceptarCotizacion.Front
         private void ActualizarPantalla(Cotizacion cot)
         {
             lblNroPedido.Text = cot.pedido.idPedido.ToString();
-            lblFechaEntrega.Text = cot.pedido.fechaEntrega.ToString();
+            lblFechaEntrega.Text = cot.pedido.fechaEntrega.ToString("dd/MM/yyyy");
             lblTipo.Text = cot.pedido.tipoDeCarga;
             lblEstado.Text = cot.pedido.estado == 1 ? "Confirmado" : "Publicado";
-            if (cot.pedido.estado == 1)
+            if (cot.pedido.estado == 1){
                 btnConfirmar.Enabled = false;
+                SendMessageEvent?.Invoke(this, "Tu cotizacion " + cot.idCotizacion.ToString() + " fue aceptada.");
+            }
         }
 
         private void gridCotizaciones_CellClick(object sender, DataGridViewCellEventArgs e)
