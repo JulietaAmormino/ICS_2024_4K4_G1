@@ -69,12 +69,14 @@
             // 
             this.gridCotizaciones.AllowUserToAddRows = false;
             this.gridCotizaciones.AllowUserToDeleteRows = false;
+            this.gridCotizaciones.BackgroundColor = System.Drawing.Color.White;
             this.gridCotizaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridCotizaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nroCotizacion,
             this.transportista,
             this.importe,
             this.fRetiro});
+            this.gridCotizaciones.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
             this.gridCotizaciones.Location = new System.Drawing.Point(24, 50);
             this.gridCotizaciones.Margin = new System.Windows.Forms.Padding(4);
             this.gridCotizaciones.Name = "gridCotizaciones";
@@ -119,11 +121,11 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(97, 34);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(88, 33);
+            this.label19.Size = new System.Drawing.Size(77, 26);
             this.label19.TabIndex = 14;
             this.label19.Text = "Tango";
             // 
@@ -165,22 +167,22 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Gadugi", 13F);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(14, 10);
+            this.label12.Location = new System.Drawing.Point(10, 10);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(181, 29);
+            this.label12.Size = new System.Drawing.Size(180, 26);
             this.label12.TabIndex = 3;
             this.label12.Text = "Fecha de entrega";
             // 
             // lblFechaEntrega
             // 
             this.lblFechaEntrega.AutoSize = true;
-            this.lblFechaEntrega.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaEntrega.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Bold);
             this.lblFechaEntrega.ForeColor = System.Drawing.Color.Black;
-            this.lblFechaEntrega.Location = new System.Drawing.Point(22, 47);
+            this.lblFechaEntrega.Location = new System.Drawing.Point(10, 47);
             this.lblFechaEntrega.Name = "lblFechaEntrega";
-            this.lblFechaEntrega.Size = new System.Drawing.Size(165, 33);
+            this.lblFechaEntrega.Size = new System.Drawing.Size(148, 26);
             this.lblFechaEntrega.TabIndex = 5;
             this.lblFechaEntrega.Text = "dd/mm/yyyy";
             // 
@@ -189,6 +191,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.lblEstado);
+            this.panel3.Font = new System.Drawing.Font("Gadugi", 13F);
             this.panel3.Location = new System.Drawing.Point(774, 49);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
@@ -198,22 +201,22 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Gadugi", 13F);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(15, 10);
+            this.label13.Location = new System.Drawing.Point(10, 10);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(188, 29);
+            this.label13.Size = new System.Drawing.Size(187, 26);
             this.label13.TabIndex = 12;
             this.label13.Text = "Estado del pedido";
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Bold);
             this.lblEstado.ForeColor = System.Drawing.Color.White;
-            this.lblEstado.Location = new System.Drawing.Point(69, 47);
+            this.lblEstado.Location = new System.Drawing.Point(10, 47);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(93, 33);
+            this.lblEstado.Size = new System.Drawing.Size(82, 26);
             this.lblEstado.TabIndex = 7;
             this.lblEstado.Text = "estado";
             // 
@@ -222,6 +225,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.lblTipo);
+            this.panel2.Font = new System.Drawing.Font("Gadugi", 13F);
             this.panel2.Location = new System.Drawing.Point(275, 49);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
@@ -231,22 +235,22 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Gadugi", 13F);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(21, 10);
+            this.label6.Location = new System.Drawing.Point(12, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 29);
+            this.label6.Size = new System.Drawing.Size(161, 26);
             this.label6.TabIndex = 3;
             this.label6.Text = "Tipo de pedido";
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Bold);
             this.lblTipo.ForeColor = System.Drawing.Color.Black;
-            this.lblTipo.Location = new System.Drawing.Point(67, 49);
+            this.lblTipo.Location = new System.Drawing.Point(12, 47);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(63, 33);
+            this.lblTipo.Size = new System.Drawing.Size(54, 26);
             this.lblTipo.TabIndex = 4;
             this.lblTipo.Text = "tipo";
             // 
@@ -264,22 +268,22 @@
             // lblNroPedido
             // 
             this.lblNroPedido.AutoSize = true;
-            this.lblNroPedido.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNroPedido.Font = new System.Drawing.Font("Gadugi", 13F, System.Drawing.FontStyle.Bold);
             this.lblNroPedido.ForeColor = System.Drawing.Color.White;
-            this.lblNroPedido.Location = new System.Drawing.Point(75, 47);
+            this.lblNroPedido.Location = new System.Drawing.Point(12, 47);
             this.lblNroPedido.Name = "lblNroPedido";
-            this.lblNroPedido.Size = new System.Drawing.Size(71, 33);
+            this.lblNroPedido.Size = new System.Drawing.Size(64, 26);
             this.lblNroPedido.TabIndex = 5;
             this.lblNroPedido.Text = "0000";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Gadugi", 13F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(27, 10);
+            this.label7.Location = new System.Drawing.Point(12, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(161, 29);
+            this.label7.Size = new System.Drawing.Size(160, 26);
             this.label7.TabIndex = 0;
             this.label7.Text = "Nro. de pedido";
             // 
@@ -291,6 +295,7 @@
             this.groupBox2.Controls.Add(this.panel2);
             this.groupBox2.Controls.Add(this.panel5);
             this.groupBox2.Controls.Add(this.panel3);
+            this.groupBox2.Font = new System.Drawing.Font("Gadugi", 13F);
             this.groupBox2.Location = new System.Drawing.Point(11, 84);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
@@ -302,11 +307,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Gadugi", 13F);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(357, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(240, 29);
+            this.label5.Size = new System.Drawing.Size(239, 26);
             this.label5.TabIndex = 13;
             this.label5.Text = "Información del pedido";
             // 
@@ -315,7 +320,7 @@
             this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.gridCotizaciones);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Tai Le", 13F);
+            this.groupBox3.Font = new System.Drawing.Font("Gadugi", 13F);
             this.groupBox3.Location = new System.Drawing.Point(11, 258);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
@@ -327,11 +332,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Gadugi", 13F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(397, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 29);
+            this.label1.Size = new System.Drawing.Size(133, 26);
             this.label1.TabIndex = 13;
             this.label1.Text = "Cotizaciones";
             // 
@@ -340,8 +345,8 @@
             this.btnConfirmar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(248)))), ((int)(((byte)(235)))));
             this.btnConfirmar.Enabled = false;
-            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(56)))));
+            this.btnConfirmar.Font = new System.Drawing.Font("Gadugi", 13F);
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
             this.btnConfirmar.Location = new System.Drawing.Point(823, 581);
             this.btnConfirmar.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.btnConfirmar.Name = "btnConfirmar";
@@ -360,6 +365,7 @@
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PedidoCotizaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
